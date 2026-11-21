@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Přehled IT projektů a kontaktní formulář">
+    <title>Projekty a Kontakt | Yeraly Gairat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">YG<span>.dev</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu" aria-expanded="false">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="projekty.html" class="active">Projekty a Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="theme-btn" id="themeToggle" aria-label="Přepnout tmavý režim">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1>Vybrané projekty</h1>
+            <p>Filtrujte projekty podle použité technologie:</p>
+            
+            <div class="filter-bar" role="group" aria-label="Filtr projektů">
+                <button class="filter-btn active" data-filter="all">Všechny</button>
+                <button class="filter-btn" data-filter="unity">Unity / VR</button>
+                <button class="filter-btn" data-filter="python">Python / AI</button>
+                <button class="filter-btn" data-filter="web">Web / C</button>
+            </div>
+
+            <div class="grid-3" id="projectsGrid">
+                <article class="card project-card" data-category="unity">
+                    <span class="tag">Unity / VR</span>
+                    <h3>Průmyslové VR simulátory</h3>
+                    <p>Sestavování interaktivních 3D scén a školicích simulátorů bezpečnosti práce v dolech a továrnách.</p>
+                </article>
+                <article class="card project-card" data-category="python">
+                    <span class="tag">Python / AI</span>
+                    <h3>Hlasový asistent Jarvis</h3>
+                    <p>Multiplatformní osobní asistent v Pythonu propojující notebook, server a chytrý telefon se syntézou řeči.</p>
+                </article>
+                <article class="card project-card" data-category="web">
+                    <span class="tag">HTML / CSS / JS</span>
+                    <h3>Osobní webová prezentace</h3>
+                    <p>Responzivní web bez použití externích frameworků s podporou tmavého režimu a dynamické manipulace s DOM.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <h2>Napište mi zprávu</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Vaše jméno *</label>
+                    <input type="text" id="name" name="name" placeholder="Např. Jan Novák" required>
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailová adresa *</label>
+                    <input type="email" id="email" name="email" placeholder="jan.novak@vsb.cz" required>
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Zpráva *</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Text vaší zprávy (min. 10 znaků)..." required></textarea>
+                    <small class="error-msg" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+                <div id="formResult" class="form-result" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Yeraly Gairat • FEI VŠB-TUO</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobní webová prezentace studenta informatiky FEI VŠB-TUO">
+    <title>Yeraly Gairat | Portfolio &amp; IT Projekty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">YG<span>.dev</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu" aria-expanded="false">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Úvod</a></li>
+                    <li><a href="projekty.html">Projekty a Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="theme-btn" id="themeToggle" aria-label="Přepnout tmavý režim">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <span class="badge">Student FEI VŠB-TUO • Informatika</span>
+                <h1>Ahoj, jsem Yeraly Gairat</h1>
+                <p>
+                    Studuji 1. ročník bakalářského programu Informatika na VŠB – Technické univerzitě Ostrava. 
+                    Zaměřuji se na vývoj v Unity/VR, skriptování v Pythonu, programování v jazyce C a tvorbu moderních webových aplikací.
+                </p>
+                <div class="hero-actions">
+                    <a href="projekty.html" class="btn btn-primary">Moje projekty</a>
+                    <a href="#dovednosti" class="btn btn-secondary">Dovednosti</a>
+                </div>
+            </div>
+            <aside class="countdown-card">
+                <h2>Odpočet do Vánoc 🎄</h2>
+                <p class="countdown-sub">Zbývající čas do 24. prosince 2026:</p>
+                <div class="timer" id="christmasTimer">
+                    <div><span id="days">--</span><small>dní</small></div>
+                    <div><span id="hours">--</span><small>hod</small></div>
+                    <div><span id="minutes">--</span><small>min</small></div>
+                    <div><span id="seconds">--</span><small>sek</small></div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="dovednosti" class="section">
+            <h2>Technické dovednosti</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>🎮 Unity &amp; VR Vývoj</h3>
+                    <p>3 roky praxe s tvorbou průmyslových tréninkových simulátorů, 3D scén a virtuální reality pro soukromý i státní sektor.</p>
+                </article>
+                <article class="card">
+                    <h3>💻 Programování &amp; AI</h3>
+                    <p>Vývoj v jazyce C (CLion), automatizace a hlasoví asistenti v Pythonu, integrace moderních AI nástrojů do workflow.</p>
+                </article>
+                <article class="card">
+                    <h3>🌐 Webové technologie</h3>
+                    <p>Sémantické HTML5, responzivní CSS3 (Flexbox, Grid), interaktivní JavaScript (DOM, Web API) a správa verzí v Gitu.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Yeraly Gairat • Vytvořeno pro předmět Základy informačních technologií (ZIT) na VŠB-TUO.</p>
+        </div>
+    </footer>
+</body>
+</html>
